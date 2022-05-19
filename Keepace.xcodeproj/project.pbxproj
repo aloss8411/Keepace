@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD3992782835F226005EE142 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AD3992772835F226005EE142 /* Charts */; };
-		AD39927A2835F23C005EE142 /* extrafunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3992792835F23C005EE142 /* extrafunc.swift */; };
+		AD39927F28361CF2005EE142 /* AccountingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39927E28361CF2005EE142 /* AccountingVC.swift */; };
 		ADD450B02834968E005212F5 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450AF2834968E005212F5 /* DateCell.swift */; };
 		ADD450B72834E86A005212F5 /* StoreIitems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */; };
 		ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD3992792835F23C005EE142 /* extrafunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extrafunc.swift; sourceTree = "<group>"; };
+		AD39927E28361CF2005EE142 /* AccountingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingVC.swift; sourceTree = "<group>"; };
 		ADD450AF2834968E005212F5 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -101,10 +101,35 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		AD39927B28361C97005EE142 /* TaskVCs */ = {
+			isa = PBXGroup;
+			children = (
+				ADE2364A282A50D300CD509E /* AddNewItemVC.swift */,
+				ADE23635282A094E00CD509E /* TasksVC.swift */,
+				AD3992752835DC17005EE142 /* Cell */,
+			);
+			path = TaskVCs;
+			sourceTree = "<group>";
+		};
+		AD39927C28361CBE005EE142 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADFDE0AE280699B900E13D9B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD39927D28361CD2005EE142 /* AccountingVCs */ = {
+			isa = PBXGroup;
+			children = (
+				AD39927E28361CF2005EE142 /* AccountingVC.swift */,
+			);
+			path = AccountingVCs;
+			sourceTree = "<group>";
+		};
 		ADE2363D282A0C9200CD509E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD3992792835F23C005EE142 /* extrafunc.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,17 +159,16 @@
 		ADFDE0A7280699B900E13D9B /* Keepace */ = {
 			isa = PBXGroup;
 			children = (
+				AD39927C28361CBE005EE142 /* View */,
 				ADE2363D282A0C9200CD509E /* Model */,
 				ADFDE0A8280699B900E13D9B /* AppDelegate.swift */,
 				ADFDE0AA280699B900E13D9B /* SceneDelegate.swift */,
-				ADFDE0AE280699B900E13D9B /* Main.storyboard */,
 				ADFDE0B4280699BB00E13D9B /* Assets.xcassets */,
 				ADFDE0B6280699BB00E13D9B /* LaunchScreen.storyboard */,
 				ADFDE0B9280699BB00E13D9B /* Info.plist */,
 				ADFDE0B1280699B900E13D9B /* Keepace.xcdatamodeld */,
-				ADE23635282A094E00CD509E /* TasksVC.swift */,
-				ADE2364A282A50D300CD509E /* AddNewItemVC.swift */,
-				AD3992752835DC17005EE142 /* Cell */,
+				AD39927D28361CD2005EE142 /* AccountingVCs */,
+				AD39927B28361C97005EE142 /* TaskVCs */,
 			);
 			path = Keepace;
 			sourceTree = "<group>";
@@ -308,10 +332,10 @@
 				ADE2364B282A50D400CD509E /* AddNewItemVC.swift in Sources */,
 				ADFDE0A9280699B900E13D9B /* AppDelegate.swift in Sources */,
 				ADFDE0B3280699B900E13D9B /* Keepace.xcdatamodeld in Sources */,
+				AD39927F28361CF2005EE142 /* AccountingVC.swift in Sources */,
 				ADFDE0AB280699B900E13D9B /* SceneDelegate.swift in Sources */,
 				ADE23636282A094E00CD509E /* TasksVC.swift in Sources */,
 				ADD450B72834E86A005212F5 /* StoreIitems+CoreDataClass.swift in Sources */,
-				AD39927A2835F23C005EE142 /* extrafunc.swift in Sources */,
 				ADE23638282A096A00CD509E /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

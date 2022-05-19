@@ -555,12 +555,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="075-Qh-zJp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0ah-Fr-oww"/>
+                    <navigationItem key="navigationItem" id="0ah-Fr-oww">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="LhA-B6-60W">
+                            <connections>
+                                <segue destination="SIG-1g-ixQ" kind="show" id="ivH-kB-bcO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaB-xt-hU0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2059" y="822"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tnL-Ow-hZT">
+            <objects>
+                <viewController id="SIG-1g-ixQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AtK-dq-Nku">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dg9-jt-f9d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OpJ-0q-HPX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6va-aA-P0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3010" y="822"/>
         </scene>
         <!--記事-->
         <scene sceneID="Vha-Ot-3wX">
@@ -618,6 +641,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ipr-W1-wid">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.93333339689999995" green="0.87351698879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -632,6 +656,7 @@
     <resources>
         <image name="doc.text.fill" catalog="system" width="115" height="128"/>
         <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
