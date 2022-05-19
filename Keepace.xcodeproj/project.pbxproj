@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD3992782835F226005EE142 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AD3992772835F226005EE142 /* Charts */; };
+		AD39927A2835F23C005EE142 /* extrafunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3992792835F23C005EE142 /* extrafunc.swift */; };
+		ADD450B02834968E005212F5 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450AF2834968E005212F5 /* DateCell.swift */; };
+		ADD450B72834E86A005212F5 /* StoreIitems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */; };
+		ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */; };
+		ADE23636282A094E00CD509E /* TasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE23635282A094E00CD509E /* TasksVC.swift */; };
+		ADE23638282A096A00CD509E /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE23637282A096A00CD509E /* TaskCell.swift */; };
+		ADE2364B282A50D400CD509E /* AddNewItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE2364A282A50D300CD509E /* AddNewItemVC.swift */; };
 		ADFDE0A9280699B900E13D9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE0A8280699B900E13D9B /* AppDelegate.swift */; };
 		ADFDE0AB280699B900E13D9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE0AA280699B900E13D9B /* SceneDelegate.swift */; };
-		ADFDE0AD280699B900E13D9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE0AC280699B900E13D9B /* ViewController.swift */; };
 		ADFDE0B0280699B900E13D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFDE0AE280699B900E13D9B /* Main.storyboard */; };
 		ADFDE0B3280699B900E13D9B /* Keepace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE0B1280699B900E13D9B /* Keepace.xcdatamodeld */; };
 		ADFDE0B5280699BB00E13D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFDE0B4280699BB00E13D9B /* Assets.xcassets */; };
@@ -37,10 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD3992792835F23C005EE142 /* extrafunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extrafunc.swift; sourceTree = "<group>"; };
+		ADD450AF2834968E005212F5 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ADE23635282A094E00CD509E /* TasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksVC.swift; sourceTree = "<group>"; };
+		ADE23637282A096A00CD509E /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		ADE2364A282A50D300CD509E /* AddNewItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemVC.swift; sourceTree = "<group>"; };
 		ADFDE0A5280699B900E13D9B /* Keepace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keepace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFDE0A8280699B900E13D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADFDE0AA280699B900E13D9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADFDE0AC280699B900E13D9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADFDE0AF280699B900E13D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADFDE0B2280699B900E13D9B /* Keepace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Keepace.xcdatamodel; sourceTree = "<group>"; };
 		ADFDE0B4280699BB00E13D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3992782835F226005EE142 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +92,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD3992752835DC17005EE142 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ADE23637282A096A00CD509E /* TaskCell.swift */,
+				ADD450AF2834968E005212F5 /* DateCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ADE2363D282A0C9200CD509E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD3992792835F23C005EE142 /* extrafunc.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ADFDE09C280699B900E13D9B = {
 			isa = PBXGroup;
 			children = (
+				ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */,
+				ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */,
 				ADFDE0A7280699B900E13D9B /* Keepace */,
 				ADFDE0C1280699BB00E13D9B /* KeepaceTests */,
 				ADFDE0CB280699BB00E13D9B /* KeepaceUITests */,
@@ -101,14 +134,17 @@
 		ADFDE0A7280699B900E13D9B /* Keepace */ = {
 			isa = PBXGroup;
 			children = (
+				ADE2363D282A0C9200CD509E /* Model */,
 				ADFDE0A8280699B900E13D9B /* AppDelegate.swift */,
 				ADFDE0AA280699B900E13D9B /* SceneDelegate.swift */,
-				ADFDE0AC280699B900E13D9B /* ViewController.swift */,
 				ADFDE0AE280699B900E13D9B /* Main.storyboard */,
 				ADFDE0B4280699BB00E13D9B /* Assets.xcassets */,
 				ADFDE0B6280699BB00E13D9B /* LaunchScreen.storyboard */,
 				ADFDE0B9280699BB00E13D9B /* Info.plist */,
 				ADFDE0B1280699B900E13D9B /* Keepace.xcdatamodeld */,
+				ADE23635282A094E00CD509E /* TasksVC.swift */,
+				ADE2364A282A50D300CD509E /* AddNewItemVC.swift */,
+				AD3992752835DC17005EE142 /* Cell */,
 			);
 			path = Keepace;
 			sourceTree = "<group>";
@@ -146,6 +182,9 @@
 			dependencies = (
 			);
 			name = Keepace;
+			packageProductDependencies = (
+				AD3992772835F226005EE142 /* Charts */,
+			);
 			productName = Keepace;
 			productReference = ADFDE0A5280699B900E13D9B /* Keepace.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +257,9 @@
 				Base,
 			);
 			mainGroup = ADFDE09C280699B900E13D9B;
+			packageReferences = (
+				AD3992762835F226005EE142 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = ADFDE0A6280699B900E13D9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADFDE0AD280699B900E13D9B /* ViewController.swift in Sources */,
+				ADD450B02834968E005212F5 /* DateCell.swift in Sources */,
+				ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */,
+				ADE2364B282A50D400CD509E /* AddNewItemVC.swift in Sources */,
 				ADFDE0A9280699B900E13D9B /* AppDelegate.swift in Sources */,
 				ADFDE0B3280699B900E13D9B /* Keepace.xcdatamodeld in Sources */,
 				ADFDE0AB280699B900E13D9B /* SceneDelegate.swift in Sources */,
+				ADE23636282A094E00CD509E /* TasksVC.swift in Sources */,
+				ADD450B72834E86A005212F5 /* StoreIitems+CoreDataClass.swift in Sources */,
+				AD39927A2835F23C005EE142 /* extrafunc.swift in Sources */,
+				ADE23638282A096A00CD509E /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD3992762835F226005EE142 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD3992772835F226005EE142 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD3992762835F226005EE142 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ADFDE0B1280699B900E13D9B /* Keepace.xcdatamodeld */ = {

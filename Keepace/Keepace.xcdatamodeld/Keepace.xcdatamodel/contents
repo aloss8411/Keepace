@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D49" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="StoreIitems" representedClassName="StoreIitems" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="descipt" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Double" minValueString="0" maxValueString="2" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="StoreIitems" positionX="-63" positionY="-18" width="128" height="89"/>
+    </elements>
 </model>
