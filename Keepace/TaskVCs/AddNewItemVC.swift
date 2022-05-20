@@ -7,12 +7,13 @@
 
 import UIKit
 import CoreData
+import Charts
 
 class AddNewItemVC: UIViewController {
 
     
     
-    
+  
     @IBOutlet weak var dateText: UILabel!
     @IBOutlet weak var collectionViews: UICollectionView!
     @IBOutlet weak var impBtn: UIButton!

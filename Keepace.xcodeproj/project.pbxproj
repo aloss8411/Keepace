@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD3992782835F226005EE142 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AD3992772835F226005EE142 /* Charts */; };
 		AD39927F28361CF2005EE142 /* AccountingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39927E28361CF2005EE142 /* AccountingVC.swift */; };
+		AD39928128376B2C005EE142 /* AddAccountingItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39928028376B2C005EE142 /* AddAccountingItemVC.swift */; };
 		ADD450B02834968E005212F5 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450AF2834968E005212F5 /* DateCell.swift */; };
 		ADD450B72834E86A005212F5 /* StoreIitems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */; };
 		ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		AD39927E28361CF2005EE142 /* AccountingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingVC.swift; sourceTree = "<group>"; };
+		AD39928028376B2C005EE142 /* AddAccountingItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountingItemVC.swift; sourceTree = "<group>"; };
 		ADD450AF2834968E005212F5 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				AD39927E28361CF2005EE142 /* AccountingVC.swift */,
+				AD39928028376B2C005EE142 /* AddAccountingItemVC.swift */,
 			);
 			path = AccountingVCs;
 			sourceTree = "<group>";
@@ -130,6 +133,8 @@
 		ADE2363D282A0C9200CD509E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */,
+				ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,8 +142,6 @@
 		ADFDE09C280699B900E13D9B = {
 			isa = PBXGroup;
 			children = (
-				ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */,
-				ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */,
 				ADFDE0A7280699B900E13D9B /* Keepace */,
 				ADFDE0C1280699BB00E13D9B /* KeepaceTests */,
 				ADFDE0CB280699BB00E13D9B /* KeepaceUITests */,
@@ -329,6 +332,7 @@
 			files = (
 				ADD450B02834968E005212F5 /* DateCell.swift in Sources */,
 				ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */,
+				AD39928128376B2C005EE142 /* AddAccountingItemVC.swift in Sources */,
 				ADE2364B282A50D400CD509E /* AddNewItemVC.swift in Sources */,
 				ADFDE0A9280699B900E13D9B /* AppDelegate.swift in Sources */,
 				ADFDE0B3280699B900E13D9B /* Keepace.xcdatamodeld in Sources */,
@@ -516,6 +520,7 @@
 				DEVELOPMENT_TEAM = 34926K97KP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Keepace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keepace;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -544,6 +549,7 @@
 				DEVELOPMENT_TEAM = 34926K97KP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Keepace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keepace;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
