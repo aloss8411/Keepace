@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1B1E02283B611E00313AD5 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B1E01283B611E00313AD5 /* Cell.swift */; };
 		AD3992782835F226005EE142 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AD3992772835F226005EE142 /* Charts */; };
 		AD39927F28361CF2005EE142 /* AccountingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39927E28361CF2005EE142 /* AccountingVC.swift */; };
-		AD39928128376B2C005EE142 /* AddAccountingItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39928028376B2C005EE142 /* AddAccountingItemVC.swift */; };
+		ADBA7C2A283B6B1A009FC5BD /* AddAccountingItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA7C29283B6B19009FC5BD /* AddAccountingItemVC.swift */; };
+		ADBA7C2D283E1F28009FC5BD /* AccountItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA7C2B283E1F28009FC5BD /* AccountItems+CoreDataClass.swift */; };
+		ADBA7C2E283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA7C2C283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift */; };
+		ADBA7C30283F2C08009FC5BD /* AccountDatailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA7C2F283F2C08009FC5BD /* AccountDatailVC.swift */; };
 		ADD450B02834968E005212F5 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450AF2834968E005212F5 /* DateCell.swift */; };
 		ADD450B72834E86A005212F5 /* StoreIitems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */; };
 		ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */; };
@@ -45,8 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1B1E01283B611E00313AD5 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		AD39927E28361CF2005EE142 /* AccountingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingVC.swift; sourceTree = "<group>"; };
-		AD39928028376B2C005EE142 /* AddAccountingItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountingItemVC.swift; sourceTree = "<group>"; };
+		ADBA7C29283B6B19009FC5BD /* AddAccountingItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountingItemVC.swift; sourceTree = "<group>"; };
+		ADBA7C2B283E1F28009FC5BD /* AccountItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountItems+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ADBA7C2C283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ADBA7C2F283F2C08009FC5BD /* AccountDatailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDatailVC.swift; sourceTree = "<group>"; };
 		ADD450AF2834968E005212F5 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreIitems+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -125,7 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				AD39927E28361CF2005EE142 /* AccountingVC.swift */,
-				AD39928028376B2C005EE142 /* AddAccountingItemVC.swift */,
+				ADBA7C29283B6B19009FC5BD /* AddAccountingItemVC.swift */,
+				ADBA7C2F283F2C08009FC5BD /* AccountDatailVC.swift */,
+				AD1B1E01283B611E00313AD5 /* Cell.swift */,
 			);
 			path = AccountingVCs;
 			sourceTree = "<group>";
@@ -133,6 +143,8 @@
 		ADE2363D282A0C9200CD509E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ADBA7C2B283E1F28009FC5BD /* AccountItems+CoreDataClass.swift */,
+				ADBA7C2C283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift */,
 				ADD450B52834E86A005212F5 /* StoreIitems+CoreDataClass.swift */,
 				ADD450B62834E86A005212F5 /* StoreIitems+CoreDataProperties.swift */,
 			);
@@ -330,16 +342,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBA7C2A283B6B1A009FC5BD /* AddAccountingItemVC.swift in Sources */,
 				ADD450B02834968E005212F5 /* DateCell.swift in Sources */,
 				ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */,
-				AD39928128376B2C005EE142 /* AddAccountingItemVC.swift in Sources */,
 				ADE2364B282A50D400CD509E /* AddNewItemVC.swift in Sources */,
+				ADBA7C2D283E1F28009FC5BD /* AccountItems+CoreDataClass.swift in Sources */,
 				ADFDE0A9280699B900E13D9B /* AppDelegate.swift in Sources */,
+				AD1B1E02283B611E00313AD5 /* Cell.swift in Sources */,
 				ADFDE0B3280699B900E13D9B /* Keepace.xcdatamodeld in Sources */,
 				AD39927F28361CF2005EE142 /* AccountingVC.swift in Sources */,
+				ADBA7C30283F2C08009FC5BD /* AccountDatailVC.swift in Sources */,
 				ADFDE0AB280699B900E13D9B /* SceneDelegate.swift in Sources */,
 				ADE23636282A094E00CD509E /* TasksVC.swift in Sources */,
 				ADD450B72834E86A005212F5 /* StoreIitems+CoreDataClass.swift in Sources */,
+				ADBA7C2E283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift in Sources */,
 				ADE23638282A096A00CD509E /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

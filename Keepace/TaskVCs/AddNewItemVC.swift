@@ -103,10 +103,12 @@ class AddNewItemVC: UIViewController {
                     return
         }
         addNewItems(title: taskTextfield, descipt: desciptTextfield.text, date: date, status: status)
-        let VC = storyboard?.instantiateViewController(withIdentifier: "Home")
+       /* let VC = storyboard?.instantiateViewController(withIdentifier: "Tab Bar Controller")
         VC?.modalPresentationStyle = .fullScreen
         VC?.modalTransitionStyle = .flipHorizontal
         present(VC!, animated: true)
+        */
+        navigationController?.popViewController(animated: true)
     }
     
     
