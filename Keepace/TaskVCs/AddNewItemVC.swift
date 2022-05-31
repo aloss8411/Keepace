@@ -39,7 +39,7 @@ class AddNewItemVC: UIViewController {
         impBtn.layer.cornerRadius = 10
         norBtn.layer.cornerRadius = 10
         triBtn.layer.cornerRadius = 10
-        addBtn.backgroundColor = UIColor(red: 0.883, green: 0.648, blue: 0.291, alpha: 1)
+        addBtn.backgroundColor = UIColor(named: "Main")
         addBtn.titleLabel?.textColor = .white
         addBtn.layer.cornerRadius = 20
         desciptTextfield.backgroundColor = .clear
@@ -76,13 +76,13 @@ class AddNewItemVC: UIViewController {
         triBtn.backgroundColor = .clear
         switch num{
         case 0:
-            impBtn.backgroundColor = .white
+            impBtn.backgroundColor = UIColor(named: "Main")
             status = 0
         case 1:
-            norBtn.backgroundColor = .white
+            norBtn.backgroundColor = UIColor(named: "Main")
             status = 1
         default:
-            triBtn.backgroundColor = .white
+            triBtn.backgroundColor = UIColor(named: "Main")
             status = 2
         }
     }
@@ -158,7 +158,7 @@ extension AddNewItemVC:UICollectionViewDelegate,UICollectionViewDataSource{
         let cell = collectionView.cellForItem(at: indexPath) as! DateCell
         let radius = cell.bgViews.bounds.width
         cell.bgViews.layer.cornerRadius = radius / 2
-        cell.bgViews.backgroundColor = .gray
+        cell.bgViews.backgroundColor = UIColor(named: "Main")
         if indexPath.row > 3{
             collectionViews.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }

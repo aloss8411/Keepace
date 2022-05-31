@@ -44,7 +44,7 @@ class TasksVC: UIViewController,UINavigationBarDelegate{
         getSpecItem(pickDate:formatters(date:date))
         view.backgroundColor = UIColor(red: 0.18, green: 0.2, blue: 0.22, alpha: 1)
         tableView.backgroundColor = .clear
-        addBtn.backgroundColor = UIColor(red: 0.883, green: 0.648, blue: 0.291, alpha: 1)
+        addBtn.backgroundColor = UIColor(named: "Main")
         addBtn.titleLabel?.textColor = .white
         collectionViews.backgroundColor = .clear
         dateText.text = formatter.string(from: date)
@@ -212,7 +212,7 @@ extension TasksVC:UICollectionViewDataSource,UICollectionViewDelegate{
         let cell = collectionView.cellForItem(at: indexPath) as! DateCell
         let radius = cell.bgViews.bounds.width
         cell.bgViews.layer.cornerRadius = radius / 2
-        cell.bgViews.backgroundColor = .gray
+        cell.bgViews.backgroundColor = UIColor(named: "Main")
         if indexPath.row > 3{
             collectionViews.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }

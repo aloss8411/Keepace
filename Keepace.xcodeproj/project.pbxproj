@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AD1B1E02283B611E00313AD5 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B1E01283B611E00313AD5 /* Cell.swift */; };
-		AD3992782835F226005EE142 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AD3992772835F226005EE142 /* Charts */; };
 		AD39927F28361CF2005EE142 /* AccountingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39927E28361CF2005EE142 /* AccountingVC.swift */; };
+		ADA4306628432BBE0000258C /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = ADA4306528432BBE0000258C /* Algorithms */; };
+		ADA4306928432BE40000258C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = ADA4306828432BE40000258C /* Charts */; };
+		ADA4306D284499A80000258C /* extraMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4306C284499A80000258C /* extraMethod.swift */; };
 		ADBA7C2A283B6B1A009FC5BD /* AddAccountingItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA7C29283B6B19009FC5BD /* AddAccountingItemVC.swift */; };
 		ADBA7C2D283E1F28009FC5BD /* AccountItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA7C2B283E1F28009FC5BD /* AccountItems+CoreDataClass.swift */; };
 		ADBA7C2E283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA7C2C283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift */; };
@@ -51,6 +53,7 @@
 /* Begin PBXFileReference section */
 		AD1B1E01283B611E00313AD5 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		AD39927E28361CF2005EE142 /* AccountingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingVC.swift; sourceTree = "<group>"; };
+		ADA4306C284499A80000258C /* extraMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extraMethod.swift; sourceTree = "<group>"; };
 		ADBA7C29283B6B19009FC5BD /* AddAccountingItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountingItemVC.swift; sourceTree = "<group>"; };
 		ADBA7C2B283E1F28009FC5BD /* AccountItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountItems+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ADBA7C2C283E1F28009FC5BD /* AccountItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -81,7 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3992782835F226005EE142 /* Charts in Frameworks */,
+				ADA4306628432BBE0000258C /* Algorithms in Frameworks */,
+				ADA4306928432BE40000258C /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +188,7 @@
 				ADFDE0B1280699B900E13D9B /* Keepace.xcdatamodeld */,
 				AD39927D28361CD2005EE142 /* AccountingVCs */,
 				AD39927B28361C97005EE142 /* TaskVCs */,
+				ADA4306C284499A80000258C /* extraMethod.swift */,
 			);
 			path = Keepace;
 			sourceTree = "<group>";
@@ -222,7 +227,8 @@
 			);
 			name = Keepace;
 			packageProductDependencies = (
-				AD3992772835F226005EE142 /* Charts */,
+				ADA4306528432BBE0000258C /* Algorithms */,
+				ADA4306828432BE40000258C /* Charts */,
 			);
 			productName = Keepace;
 			productReference = ADFDE0A5280699B900E13D9B /* Keepace.app */;
@@ -297,7 +303,8 @@
 			);
 			mainGroup = ADFDE09C280699B900E13D9B;
 			packageReferences = (
-				AD3992762835F226005EE142 /* XCRemoteSwiftPackageReference "Charts" */,
+				ADA4306428432BBE0000258C /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				ADA4306728432BE40000258C /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = ADFDE0A6280699B900E13D9B /* Products */;
 			projectDirPath = "";
@@ -343,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBA7C2A283B6B1A009FC5BD /* AddAccountingItemVC.swift in Sources */,
+				ADA4306D284499A80000258C /* extraMethod.swift in Sources */,
 				ADD450B02834968E005212F5 /* DateCell.swift in Sources */,
 				ADD450B82834E86A005212F5 /* StoreIitems+CoreDataProperties.swift in Sources */,
 				ADE2364B282A50D400CD509E /* AddNewItemVC.swift in Sources */,
@@ -702,7 +710,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AD3992762835F226005EE142 /* XCRemoteSwiftPackageReference "Charts" */ = {
+		ADA4306428432BBE0000258C /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		ADA4306728432BE40000258C /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts.git";
 			requirement = {
@@ -713,9 +729,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AD3992772835F226005EE142 /* Charts */ = {
+		ADA4306528432BBE0000258C /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AD3992762835F226005EE142 /* XCRemoteSwiftPackageReference "Charts" */;
+			package = ADA4306428432BBE0000258C /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		ADA4306828432BE40000258C /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA4306728432BE40000258C /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */

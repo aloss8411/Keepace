@@ -37,6 +37,7 @@ class AddAccountingItemVC: UITableViewController {
         
         makeArrayOfDate()
         setUpVCSetting()
+        priceText.setNumberKeyboardReturn()
     }
     override func viewDidAppear(_ animated: Bool) {
         configureCellSize()
@@ -50,13 +51,14 @@ class AddAccountingItemVC: UITableViewController {
         upViews.backgroundColor = .clear
         tableViews.backgroundColor = UIColor(red: 0.18, green: 0.2, blue: 0.22, alpha: 1)
         addbtn.tintColor = .white
-        addbtn.backgroundColor = .brown
+        addbtn.backgroundColor = UIColor(named: "Main")
         addbtn.layer.cornerRadius = 10
         btns[0].layer.cornerRadius = 10
-        btns[0].backgroundColor = .brown
+        btns[0].backgroundColor = UIColor(named: "Main")
         for num in 0 ... 3{
             btns[num].tintColor = .white
         }
+        
     }
     
     func noticeUserdidNotComplete(){
@@ -84,7 +86,7 @@ class AddAccountingItemVC: UITableViewController {
             btns[num].layer.cornerRadius = 10
             btns[num].backgroundColor = .clear
         }
-        btns[sender.tag].backgroundColor = .brown
+        btns[sender.tag].backgroundColor = UIColor(named: "Main")
         status = Double(sender.tag)
     }
     
@@ -119,6 +121,7 @@ extension AddAccountingItemVC:UICollectionViewDelegate,UICollectionViewDataSourc
         cell.date.text = formatter.string(from: dateArray[indexPath.row])
         formatter.dateFormat = "EEE"
         cell.engDate.text = formatter.string(from: dateArray[indexPath.row])
+        formatter.dateFormat = "yyyy.MM.dd"
         return cell
     }
     
@@ -127,13 +130,15 @@ extension AddAccountingItemVC:UICollectionViewDelegate,UICollectionViewDataSourc
         let cell = collectionView.cellForItem(at: indexPath) as! DateCell
         let radius = cell.bgViews.bounds.width
         cell.bgViews.layer.cornerRadius = radius / 2
-        cell.bgViews.backgroundColor = .gray
+        cell.bgViews.backgroundColor = UIColor(named: "Main")
         if indexPath.row > 3{
             collectionViews.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
+        lazy var a:String = formatter.string(from: date)
         formatter.dateFormat = "yyyy.MM.dd"
-        selectDay = dateArray[indexPath.row]
-       
+        a = formatter.string(from: dateArray[indexPath.row])
+        selectDay = formatter.date(from: a)!
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -164,7 +169,6 @@ extension AddAccountingItemVC{
         items.price = price
         do{
             try context.save()
-            print("successful")
         }
         catch{
             print(error)
@@ -181,3 +185,6 @@ extension AddAccountingItemVC:UITextFieldDelegate{
         textField.becomeFirstResponder()
     }
 }
+
+
+
