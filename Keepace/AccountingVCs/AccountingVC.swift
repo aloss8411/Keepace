@@ -229,7 +229,7 @@ extension AccountingVC{
                 }
             }
         }
-        totalMoney.text = String(totalCost + totalEarning)
+        totalMoney.text = String(totalEarning - totalCost)
         earning.text = String(totalEarning)
         cost.text = String(totalCost)
     }

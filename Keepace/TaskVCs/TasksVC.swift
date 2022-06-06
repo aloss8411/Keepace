@@ -236,8 +236,6 @@ extension TasksVC:UICollectionViewDataSource,UICollectionViewDelegate{
         layout?.minimumLineSpacing = 0
         let width = collectionViews.bounds.width / 7
         layout?.itemSize = CGSize(width: width, height: width)
-        
-        
         }
 
     
