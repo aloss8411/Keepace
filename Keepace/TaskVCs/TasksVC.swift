@@ -42,17 +42,29 @@ class TasksVC: UIViewController,UINavigationBarDelegate{
         changeBottomLine(select: 0)
         formatter.dateFormat = "yyyy.MM.dd"
         getSpecItem(pickDate:formatters(date:date))
-        view.backgroundColor = UIColor(red: 0.18, green: 0.2, blue: 0.22, alpha: 1)
+        view.backgroundColor = UIColor(named: "background")
         tableView.backgroundColor = .clear
         addBtn.backgroundColor = UIColor(named: "Main")
         addBtn.titleLabel?.textColor = .white
         collectionViews.backgroundColor = .clear
         dateText.text = formatter.string(from: date)
         dateText.textColor = .white
+        addImageInBG()
     }
     override func viewDidAppear(_ animated: Bool) {
         configureCellSize()
         collectionViews.scrollToItem(at: indexs, at:.right, animated:true)
+    }
+    
+    func addImageInBG(){
+        let image = UIImage(named: "Vector")
+        let imageView = UIImageView(image: image)
+        imageView.frame = CGRect(x: -20, y: 0, width: 200, height: 200)
+    
+        view.insertSubview(imageView, at: 0)
+    
+     
+        
     }
 
     func changeBottomLine(select number:Double){
@@ -135,12 +147,16 @@ extension TasksVC:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
         cell.backgroundColor = .clear
-        cell.BGViews.backgroundColor = .white
+        cell.BGViews.backgroundColor = UIColor(named: "light-background")
         cell.BGViews.layer.cornerRadius = 20
         cell.BGViews.layer.shadowColor = CGColor(red: 1/255, green: 1/255, blue: 1/255, alpha: 0.5)
         cell.BGViews.layer.shadowOffset = CGSize(width: 2, height: 4)
+        cell.BGViews.layer.borderWidth = 2
+        cell.BGViews.layer.borderColor = UIColor(named: "Main")?.cgColor
         cell.title.text = tableItems[indexPath.row].title
+        cell.title.textColor = .white
         cell.descipt.text = tableItems[indexPath.row].descipt
+        cell.descipt.textColor = .white
         cell.Date.text = tableItems[indexPath.row].date
         return cell
     }

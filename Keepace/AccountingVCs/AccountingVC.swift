@@ -127,7 +127,7 @@ class AccountingVC: UIViewController {
     
     
     func setUp(){
-        view.backgroundColor = UIColor(red: 0.18, green: 0.2, blue: 0.22, alpha: 1)
+        view.backgroundColor = UIColor(named: "background")
         tableViews.backgroundColor = .clear
         views.backgroundColor = .clear
         for num in 0...3{

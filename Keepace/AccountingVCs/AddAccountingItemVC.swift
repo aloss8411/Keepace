@@ -46,7 +46,7 @@ class AddAccountingItemVC: UITableViewController {
     
     
     func setUpVCSetting(){
-        view.backgroundColor = UIColor(red: 0.18, green: 0.2, blue: 0.22, alpha: 1)
+        view.backgroundColor = UIColor(named: "background")
         collectionViews.backgroundColor = .clear
         upViews.backgroundColor = .clear
         tableViews.backgroundColor = UIColor(red: 0.18, green: 0.2, blue: 0.22, alpha: 1)

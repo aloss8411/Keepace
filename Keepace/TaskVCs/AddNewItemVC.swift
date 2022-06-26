@@ -14,6 +14,7 @@ class AddNewItemVC: UIViewController {
     
     
   
+    @IBOutlet weak var btnStackViews: UIStackView!
     @IBOutlet weak var dateText: UILabel!
     @IBOutlet weak var collectionViews: UICollectionView!
     @IBOutlet weak var impBtn: UIButton!
@@ -35,10 +36,13 @@ class AddNewItemVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 0.18, green: 0.2, blue: 0.22, alpha: 1)
+        view.backgroundColor = UIColor(named: "background")
         impBtn.layer.cornerRadius = 10
+        impBtn.tintColor = .white
         norBtn.layer.cornerRadius = 10
+        norBtn.tintColor = .white
         triBtn.layer.cornerRadius = 10
+        triBtn.tintColor = .white
         addBtn.backgroundColor = UIColor(named: "Main")
         addBtn.titleLabel?.textColor = .white
         addBtn.layer.cornerRadius = 20
@@ -52,6 +56,7 @@ class AddNewItemVC: UIViewController {
         makeArrayOfDate()
         collectionViews.backgroundColor = .clear
         formatter.dateFormat = "yyyy.MM.dd"
+       
         dateText.text = formatter.string(from: date)
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -76,13 +81,13 @@ class AddNewItemVC: UIViewController {
         triBtn.backgroundColor = .clear
         switch num{
         case 0:
-            impBtn.backgroundColor = UIColor(named: "Main")
+            impBtn.backgroundColor = UIColor(named: "light-background")
             status = 0
         case 1:
-            norBtn.backgroundColor = UIColor(named: "Main")
+            norBtn.backgroundColor = UIColor(named: "light-background")
             status = 1
         default:
-            triBtn.backgroundColor = UIColor(named: "Main")
+            triBtn.backgroundColor = UIColor(named: "light-background")
             status = 2
         }
     }
@@ -158,7 +163,7 @@ extension AddNewItemVC:UICollectionViewDelegate,UICollectionViewDataSource{
         let cell = collectionView.cellForItem(at: indexPath) as! DateCell
         let radius = cell.bgViews.bounds.width
         cell.bgViews.layer.cornerRadius = radius / 2
-        cell.bgViews.backgroundColor = UIColor(named: "Main")
+        cell.bgViews.backgroundColor = UIColor(named: "light-background")
         if indexPath.row > 3{
             collectionViews.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
